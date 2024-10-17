@@ -1,0 +1,44 @@
+Documenting all the steps to build this project
+
+Project Approach:
+
+       pypdf2              
+PDF------------->Text--------->API-------->response
+
+
+CREATING ENVIRONMENT:
+INSTALL ANACONDA
+ADD ANACONDA (scripts and condabin) TO ENVIRONMENT VARIABLES
+
+& "C:\Users\deept\anaconda3\Scripts\conda.exe" create -p venv python==3.10 -y
+(above cmd creates venv folder)
+
+
+CREATE REQUIREMENTS.TXT FILE
+
+
+ACIVATE CONDA ENVIRONMENT
+IN ANACONDA PROMPT AS ADMINISTRATOR,
+conda init powershell
+(now the path in powershell appears like):
+(d:\Application Tracking System\venv) PS D:\Application Tracking System>  
+
+conda activate venv/ 
+
+pip install -r requirements.txt
+
+
+CREATE GOOGLE API KEY
+go to makersuite and get a key 
+add the key to .env
+
+CREATE APP.PY 
+(add the code)
+
+
+Back to powershell:
+streamlit run app.py
+
+(this will launch the app on web localhost)
+
+Now the app will work successfully!
